@@ -15,4 +15,4 @@ then
 	rm -rf "$TMP"
 fi
 
-docker build $1 -t juron/siggraph2016_colorization:2016-04-25 .
+docker build $1 -t haukehein/siggraph2016_colorization:2016-04-25 .
