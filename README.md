@@ -1,2 +1,1 @@
-# siggraph2016_colorization
-Docker image containing siggraph2016_colorization
+#Combines Torch7 and phusion/passenger-customizable
