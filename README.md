@@ -8,15 +8,14 @@ See: https://github.com/satoshiiizuka/siggraph2016_colorization
 
 #Installation (Linux):
 
-  TMP=`mktemp -d`  && \
+  TMP=`mktemp -d`
   
-  git clone https://github.com/haukehein/siggraph2016_colorization.git "$TMP" --recursive  && \
+  git clone https://github.com/haukehein/siggraph2016_colorization.git "$TMP" --recursive  \n
+  cd "$TMP"
   
-  cd "$TMP"  && \
+  bash ./build.sh
   
-  bash ./build.sh  && \
-  
-  cd -  && \
+  cd -
   
   rm -rf "$TMP"
  
