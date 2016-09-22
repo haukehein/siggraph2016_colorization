@@ -11,4 +11,3 @@ See: https://github.com/satoshiiizuka/siggraph2016_colorization
   bash ./build.sh  && \
   cd -  && \
   rm -rf "$TMP"
-
