@@ -10,7 +10,8 @@ See: https://github.com/satoshiiizuka/siggraph2016_colorization
 
   TMP=`mktemp -d`
   
-  git clone https://github.com/haukehein/siggraph2016_colorization.git "$TMP" --recursive  \n
+  git clone https://github.com/haukehein/siggraph2016_colorization.git "$TMP" --recursive
+  
   cd "$TMP"
   
   bash ./build.sh
