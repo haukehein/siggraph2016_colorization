@@ -15,3 +15,18 @@ cd "$TMP"  && \
 bash ./build.sh  && \
 cd -  &&  rm -rf "$TMP"
 ``` 
+
+##Usage (example):
+
+Open a terminal and start docker
+
+```
+docker run -it haukehein/siggraph2016_colorization:2016-04-25 /bin/bash
+```
+
+Then type inside the docker session
+
+```
+cd ~/colorize  && \
+th colorize.lua ./ansel_colorado_1941.png ./ansel_colorado_1941_color.png
+```
