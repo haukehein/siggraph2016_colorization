@@ -30,3 +30,18 @@ Then type inside the docker session
 cd ~/colorize  && \
 th colorize.lua ./ansel_colorado_1941.png ./ansel_colorado_1941_color.png
 ```
+ 
+ 
+ 
+##Citing
+
+```
+@Article{IizukaSIGGRAPH2016,
+   author = {Satoshi Iizuka and Edgar Simo-Serra and Hiroshi Ishikawa},
+   title = {{Let there be Color!: Joint End-to-end Learning of Global and Local Image Priors for Automatic Image Colorization with Simultaneous Classification}},
+   journal = "ACM Transactions on Graphics (Proc. of SIGGRAPH 2016)",
+   year = 2016,
+   volume = 35,
+   number = 4,
+ }
+ ```
