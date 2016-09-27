@@ -10,6 +10,12 @@ ENV HOME /root
 RUN cd && \
 apt-get update && \
 apt-get -y install bash sudo wget git && \
+echo -e "\n\nInstalling LUA dependencies ..." && \
+cd ~/torch && \
+luarocks install nn && \
+luarocks install image && \
+luarocks install nngraph && \
+echo -e "\n\nDownlaoding and installing siggraph2016_colorization ..." && \
 git clone https://github.com/satoshiiizuka/siggraph2016_colorization.git ~/colorize --recursive && \
 cd  ~/colorize && \
 bash -c './download_model.sh' && \
