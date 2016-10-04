@@ -7,10 +7,10 @@ FROM haukehein/torch7:1.0.0
 MAINTAINER haukehein <BitCrusher@gmx-topmail.de>
 
 ENV HOME /root
+SHELL ["/bin/bash", "--login -c"]
+
 RUN cd && \
 apt-get update && \
-apt-get -y install bash sudo wget git && \
-rm -f /bin/sh && ln -sr /bin/bash /bin/sh && \
 echo "\n\nInstalling LUA dependencies ..." && \
 cd ~/torch && \
 luarocks install nn && \
@@ -23,5 +23,4 @@ cd  ~/colorize && \
 cd  && \
 apt-get -y autoremove && \
 apt-get clean && \
-rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/* && \
-rm -f /bin/sh && ln -sr /bin/bash /bin/sh
+rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/*
